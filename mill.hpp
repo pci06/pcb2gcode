@@ -39,6 +39,7 @@ class Mill {
   double zchange;
   double zsafe;
   double zwork;
+	double stepsize;
   double tolerance;
   bool explicit_tolerance;
   bool backside;
