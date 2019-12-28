@@ -522,7 +522,7 @@ static void check_milling_parameters(po::variables_map const& vm)
 
 		
 		if (vm.count("mill-infeed")>0 && vm["mill-infeed"].as<Length>().asInch(unit) < 0.001) {
-			options::maybe_throw("Error: The milling infeed --cut-infeed. seems too low.", ERR_LOWMILLINFEED);
+			options::maybe_throw("Error: The milling infeed --mill-infeed. seems too low.", ERR_LOWMILLINFEED);
 		}
 
 		if (vm["mill-speed"].as<Rpm>().asDouble() < 0) {
